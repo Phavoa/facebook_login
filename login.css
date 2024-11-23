@@ -1,0 +1,152 @@
+/* Resetting Margins, Padding, and Box Sizing */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* General Body Styling */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f2f5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Main Container */
+.main-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  max-width: 980px;
+  width: 100%;
+  padding: 20px;
+}
+
+/* Facebook Info Section */
+.facebook-left {
+  max-width: 45%;
+  text-align: left;
+}
+
+.facebook-left h1 {
+  color: #1877f2;
+  font-size: 56px;
+  font-family: 'Helvetica Neue', Helvetica, sans-serif;
+  margin-bottom: 10px;
+}
+
+.facebook-left p {
+  font-size: 20px;
+  color: #606770;
+}
+
+/* Form Styling */
+.form-div form {
+  max-width: 400px;
+  width: 100%;
+  background: #ffffff;
+  padding: 25px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+form input[type="text"],
+form input[type="password"] {
+  width: 100%;
+  padding: 14px;
+  margin: 8px 0 10px;
+  border: 1px solid #dddfe2;
+  border-radius: 6px;
+  font-size: 16px;
+}
+
+/* Button Styling */
+.login-btn,
+.create-acc {
+  width: 100%;
+  padding: 14px;
+  border-radius: 6px;
+  border: none;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.login-btn {
+  background-color: #1877f2;
+  color: #ffffff;
+}
+
+.login-btn:hover {
+  background-color: #166fe5;
+}
+
+.create-acc {
+  background-color: #42b72a;
+  color: #ffffff;
+  margin-top: 20px;
+}
+
+.create-acc:hover {
+  background-color: #36a420;
+}
+
+/* Forgot Password & Divider */
+.fp-div {
+  text-align: center;
+  margin: 10px 0;
+}
+
+form a {
+  color: #1877f2;
+  font-size: 16px;
+  text-decoration: none;
+}
+
+form a:hover {
+  text-decoration: underline;
+}
+
+hr {
+  border: 0;
+  height: 1px;
+  background-color: #dddfe2;
+  margin: 20px 0;
+}
+
+/* "Create a Page" Link */
+.create-page {
+  margin-top: 20px;
+  text-align: center;
+  font-size: 14px;
+}
+
+.create-page a {
+  color: #606770;
+  text-decoration: none;
+}
+
+.create-page a strong {
+  color: #090909;
+}
+
+.create-page a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .main-container {
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  .facebook-left {
+    max-width: 100%;
+    margin-bottom: 20px;
+  }
+}
